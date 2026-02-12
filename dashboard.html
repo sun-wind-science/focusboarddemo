@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html lang="zh-CN">
+
+<head>
+
+&nbsp; <meta charset="utf-8" />
+
+&nbsp; <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+&nbsp; <title>FocusBoard - Dashboard</title>
+
+&nbsp; <link rel="stylesheet" href="assets/css/main.css" />
+
+</head>
+
+<body>
+
+&nbsp; <header class="site-header">
+
+&nbsp;   <div class="container">
+
+&nbsp;     <a class="brand" href="index.html">FocusBoard</a>
+
+&nbsp;     <nav class="nav">
+
+&nbsp;       <a href="blog.html">Blog</a>
+
+&nbsp;       <a class="active" href="dashboard.html">Dashboard</a>
+
+&nbsp;     </nav>
+
+&nbsp;   </div>
+
+&nbsp; </header>
+
+
+
+&nbsp; <main class="container">
+
+&nbsp;   <h1>Dashboard</h1>
+
+&nbsp;   <p class="muted">阶段1：用 localStorage 存目标（无需后端）。阶段2：换成 API + 数据库。</p>
+
+
+
+&nbsp;   <section class="card">
+
+&nbsp;     <h2>添加目标</h2>
+
+&nbsp;     <form id="goalForm" class="form">
+
+&nbsp;       <input id="goalTitle" type="text" placeholder="例如：一周完成静态站第一版" required />
+
+&nbsp;       <input id="goalProgress" type="number" min="0" max="100" value="0" required />
+
+&nbsp;       <button class="btn" type="submit">添加</button>
+
+&nbsp;     </form>
+
+&nbsp;     <div class="muted meta">进度范围 0~100</div>
+
+&nbsp;   </section>
+
+
+
+&nbsp;   <section class="card">
+
+&nbsp;     <h2>目标列表</h2>
+
+&nbsp;     <ul id="goalList" class="list"></ul>
+
+&nbsp;     <button id="clearGoals" class="btn btn-ghost" type="button">清空</button>
+
+&nbsp;   </section>
+
+&nbsp; </main>
+
+
+
+&nbsp; <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
+
+
+
